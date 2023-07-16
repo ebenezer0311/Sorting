@@ -25,11 +25,11 @@ def BubbleSort(arr,n): # pushes the max to end by adjacent swapping ,worst /avg 
 def InsertionSort(arr,n): #places value in its correct position # worst /avg case T.C=O(n^2),else T.C=O(n) 
     for i in range(n):
         j=i
-        while j>0 and arr[j]>arr[j+1]:
-            arr[j],arr[j+1]=arr[j+1],arr[j]
+        while j>0 and arr[j-1]>arr[j]:
+            arr[j-1],arr[j]=arr[j],arr[j-1]
             j-=1
     return arr
 
 arr=[10,2,20,10,1,2,4,99,1]
 n=len(arr)
-print(BubbleSort(arr,n))            
+print(InsertionSort(arr,n))            
