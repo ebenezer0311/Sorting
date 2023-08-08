@@ -61,6 +61,8 @@ def mSort(arr,low,high):
     Merge(arr,low,mid,high)
 
 
+# newly
+
 arr=[10,2,20,10,1,2,4,99,1]
 n=len(arr)-1
 low=0
